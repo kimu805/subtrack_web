@@ -1,6 +1,6 @@
-import { apiFetch } from "./client";
+import api from "@/lib/api";
 
 export async function fetchMe() {
-  const res = await apiFetch("/me")
-  return await res.json()
+  const res = await api.get("/me")
+  return await res.data
 }

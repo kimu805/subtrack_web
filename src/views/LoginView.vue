@@ -16,7 +16,7 @@ import { useRouter } from 'vue-router';
     })
 
     auth.login(res.data.token)
-    router.push("/")
+    router.push("/dashboard")
   }
 </script>
 

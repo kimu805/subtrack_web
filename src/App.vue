@@ -2,6 +2,7 @@
 import { onMounted } from 'vue';
 import { useAuthStore } from './stores/auth';
 import { fetchMe } from './api/users';
+import api from './lib/api';
 
   const auth = useAuthStore()
 
@@ -10,7 +11,6 @@ import { fetchMe } from './api/users';
 
     try {
       const me = await fetchMe()
-      console.log("login user", me)
     } catch {
       auth.logout()
     }

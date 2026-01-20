@@ -3,7 +3,7 @@ import { useAuthStore } from "@/stores/auth"
 const API_BASE = "http://localhost:3000/api"
 
 export async function apiFetch(path, options = {}) {
-  const auth = useAuthStore
+  const auth = useAuthStore()
 
   const headers = {
     "Content-Type": "application/json",
