@@ -25,8 +25,8 @@ import { onMounted, ref } from 'vue';
 <template>
   <h1>Dashboard</h1>
   <h2>新規作成</h2>
-  <input v-model="amount" type="number" placeholder="amount">
-  <input v-model="memo" type="text" placeholder="memo">
+  <input v-model="amount" type="number" placeholder="料金">
+  <input v-model="memo" type="text" placeholder="メモ">
   <button @click="submit">登録</button>
   <h2>一覧</h2>
   <ul>
